@@ -1,5 +1,4 @@
 package Jobsheet02;
-
 public class Dragon {
     int y; //digunakan untuk pergerakan atas dan bawah
     int x; //digunakan untuk pergerakan kiri dan kanan
