@@ -25,10 +25,10 @@ public class Main {
         System.out.println();
         
         System.out.println("Produk yang dibeli:");
-        System.out.println("- " + produk1.getNama() + " : Rp" + produk1.getHarga());
-        System.out.println("- " + produk2.getNama() + " : Rp" + produk2.getHarga());
+        System.out.println("- " + produk1.getNamaProduk() + " : Rp" + produk1.getHarga());
+        System.out.println("- " + produk2.getNamaProduk() + " : Rp" + produk2.getHarga());
 
         System.out.println();
-        System.out.println("Total      : Rp" + transaksi.hitungTotal());
+        System.out.println("Total Pembelian : Rp" + transaksi.hitungTotal());
     }
 }

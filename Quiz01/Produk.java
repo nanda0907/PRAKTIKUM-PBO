@@ -2,13 +2,13 @@ package Quiz01;
 
 public class Produk {
     private String kodeProduk;
-    private String nama;
+    private String namaProduk;
     private int harga;
     private int stok;
 
-    public Produk(String kodeProduk, String nama, int harga, int stok) {
+    public Produk(String kodeProduk, String namaProduk, int harga, int stok) {
         this.kodeProduk = kodeProduk;
-        this.nama = nama;
+        this.namaProduk = namaProduk;
         this.harga = harga;
         this.stok = stok;
     }
@@ -17,8 +17,8 @@ public class Produk {
         return kodeProduk;
     }
 
-    public String getNama() {
-        return nama;
+    public String getNamaProduk() {
+        return namaProduk;
     }
 
     public int getHarga() {
@@ -38,6 +38,6 @@ public class Produk {
     }
 
     public String getInfo() {
-        return kodeProduk + " - " + nama + " - Rp" + harga + " - Stok: " + stok;
+        return kodeProduk + " - " + namaProduk + " - Rp" + harga + " - Stok: " + stok;
     }
 }
