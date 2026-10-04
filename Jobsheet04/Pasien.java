@@ -5,8 +5,9 @@ import java.time.LocalDate;
 public class Pasien {
     private String noRekamMedis;
     private String nama;
-    private ArrayList<Konsultasi> riwayatKonsultasi;
+    private ArrayList<Konsultasi> riwayatKonsultasi; //ArrayList untuk menyimpan banyak objek Konsultasi
 
+    // constructor untuk menginisialisasi objek Pasien dengan noRekamMedis dan nama, serta membuat ArrayList kosong untuk riwayatKonsultasi
     public Pasien(String noRekamMedis, String nama) {
         this.noRekamMedis = noRekamMedis;
         this.nama = nama;
@@ -30,28 +31,29 @@ public class Pasien {
     }
 
     public String getInfo(){
-        String info = "";
+        String info = ""; // Variabel lokal untuk menampung informasi
         info += "No Rekam Medis: " + this.noRekamMedis + "\n";
         info += "Nama: " + this.nama + "\n"; 
         
         if (!riwayatKonsultasi.isEmpty()) {
             info += "Riwayat Konsultasi:\n";
 
+            // Mengambil setiap objek Konsultasi dari ArrayList
             for (Konsultasi konsultasi : riwayatKonsultasi) {
                 info += konsultasi.getInfo();
             }
         } else {
             info += "Belum ada riwayat konsultasi.";
         }
-        info += "\n";
+        info += "\n"; //menambahkna baris baru di akhir informasi
         return info;
     }
 
     public void tambahKonsultasi(LocalDate tanggal, Pegawai dokter, Pegawai perawat) {
-        Konsultasi konsultasi = new Konsultasi();
-        konsultasi.setTanggal(tanggal);
-        konsultasi.setDokter(dokter);
-        konsultasi.setPerawat(perawat);
-        riwayatKonsultasi.add(konsultasi);
+        Konsultasi konsultasi = new Konsultasi(); //membuat objek Konsultasi baru
+        konsultasi.setTanggal(tanggal); //mengisi tanggal konsultasi
+        konsultasi.setDokter(dokter); //mengisi dokter yang menangani konsultasi
+        konsultasi.setPerawat(perawat); //mengisi perawat yang menangani konsultasi
+        riwayatKonsultasi.add(konsultasi); //menyimpan objek Konsultasi ke dalam ArrayList riwayatKonsultasi
     }
 }

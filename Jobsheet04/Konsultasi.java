@@ -2,7 +2,7 @@ package Jobsheet04;
 import java.time.LocalDate;
 
 public class Konsultasi {
-    private LocalDate tanggal;
+    private LocalDate tanggal; //menyimpan tanggal konsultasi
     private Pegawai dokter;
     private Pegawai perawat;
 
