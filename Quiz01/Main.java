@@ -9,7 +9,6 @@ public class Main {
         Produk produk2 = new Produk("PR002", "Teh Botol", 5000, 10);
         // produk1.setHarga(5000); //contoh penggunaan setter untuk mengubah harga produk1
 
-
         Transaksi transaksi = new Transaksi(
                 "T001",
                 LocalDate.of(2026, 9, 29),pelanggan);
