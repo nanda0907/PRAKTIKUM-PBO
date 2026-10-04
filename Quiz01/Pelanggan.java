@@ -8,7 +8,6 @@ public class Pelanggan {
         this.idPelanggan = idPelanggan; 
         this.nama = nama;
     }
-
     public String getIdPelanggan() {
         return idPelanggan;
     }
