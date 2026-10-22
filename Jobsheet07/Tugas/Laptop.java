@@ -14,17 +14,6 @@ public class Laptop extends Elektronik {
         this.ukuranLayar = ukuranLayar;
     }
 
-    // public String getInfo(){
-    //     return "Ukuran Layar  : " + ukuranLayar + "\n";
-    // }
-
-    // public String getAllInfo(){
-    //     String info = super.getInfo();
-    //     info += getInfo();
-        
-    //     return info;
-    // }
-
     @Override
     public String getInfo() {
         return super.getInfo() + "Ukuran Layar : " + ukuranLayar + "\n";
