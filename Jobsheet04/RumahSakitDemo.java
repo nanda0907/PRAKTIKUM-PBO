@@ -4,6 +4,9 @@ import java.time.LocalDate;
 public class RumahSakitDemo {
     public static void main(String[] args) {
         Pegawai ani = new Pegawai("1234", "Dr. Ani");
+        ani.setNama("Anita");
+        System.out.println(ani.getNama());
+
         Pegawai Bagus = new Pegawai("4567", "Dr. Bagus");
 
         Pegawai desi = new Pegawai("1234", "Ns. Desi");

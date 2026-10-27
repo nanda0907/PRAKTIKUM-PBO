@@ -5,7 +5,7 @@ public class Kulkas extends Elektronik {
 
     // constructor tanpa parameter
     public Kulkas() {
-        
+    
     }
 
     // constructor dengan parameter

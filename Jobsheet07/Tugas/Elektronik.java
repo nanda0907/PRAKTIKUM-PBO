@@ -17,6 +17,7 @@ public class Elektronik {
         this.harga = harga;
     }
 
+
     public String getInfo() {
         String info = "";
         info += "Merk  : " + merk + "\n";

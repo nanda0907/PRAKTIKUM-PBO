@@ -8,6 +8,7 @@ public class Main {
         Produk produk1 = new Produk("PR001", "Indomie", 3500, 10);
         Produk produk2 = new Produk("PR002", "Teh Botol", 5000, 10);
         // produk1.setHarga(5000); //contoh penggunaan setter untuk mengubah harga produk1
+        produk2.setHarga(10000); //contoh penggunaan setter untuk mengubah harga produk2
 
         Transaksi transaksi = new Transaksi(
                 "T001",
