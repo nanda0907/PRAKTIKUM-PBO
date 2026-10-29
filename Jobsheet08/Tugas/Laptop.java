@@ -19,7 +19,6 @@ public class Laptop extends Elektronik {
         System.out.println("Menekan tombol power laptop...");
         System.out.println("Menunggu sistem operasi menyala...");
         System.out.println("Laptop siap digunakan.");
-        System.out.println("------------------------------------");
     }
 
     @Override
