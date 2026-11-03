@@ -7,10 +7,12 @@ public class Kulkas implements Elektronik {
 
     @Override 
     public void nyalakan() {
-        System.out.println("Kulkas menyala");
+        System.out.println("Hubungkan kabel kulkas ke stopkontak");
+        System.out.println("Kulkas mulai mendinginkan");
     }
     
     @Override public void matikan() {
+        System.out.println("Putuskan kabel kulkas dari stopkontak");
         System.out.println("Kulkas mati");
     }
 
